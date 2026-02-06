@@ -39,7 +39,7 @@ make_icon(512, "icon-512.png")
 manifest = {
     "name": "Keiko Generator",
     "short_name": "Keiko",
-    "description": "Zufällige Kihon-Kombinationen und Kata-Vorschläge – Für 3. Dan – DJKB (Stand: Juli 2013).",
+    "description": "Zufällige Kihon-Kombinationen und Kata-Vorschläge – Für 1. Dan – DJKB (Stand: Juli 2013).",
     "start_url": "./",
     "scope": "./",
     "display": "standalone",
@@ -197,7 +197,7 @@ index_html = """<!doctype html>
           <div class="inner">
             <div class="h1">Wähle dein Training</div>
             <div class="h2">Zufällige Kihon‑Kombinationen oder Kata‑Vorschläge</div>
-            <div class="meta">Für 3. Dan – DJKB (Stand: Juli 2013)</div>
+            <div class="meta">Für 1. Dan – DJKB (Stand: Juli 2013)</div>
           </div>
           <div class="brush" aria-hidden="true"></div>
         </div>
@@ -210,7 +210,7 @@ index_html = """<!doctype html>
 
           <button class="btn" id="btnKata">
             <span class="icon" aria-hidden="true">拳</span>
-            <span class="label">Generate Katas <span class="caption">Tokui + 3 Zufälle</span></span>
+            <span class="label">Generate Katas <span class="caption">Sentei + 1 Zufall</span></span>
           </button>
         </div>
 
@@ -232,10 +232,10 @@ index_html = """<!doctype html>
 
       <section id="kata" class="screen">
         <div class="card">
-          <div class="section-title">Kata – Vorschlag (4)</div>
+          <div class="section-title">Kata – Vorschlag (2)</div>
           <div class="toolbar">
             <button class="ghost" id="regenKata">Neu würfeln</button>
-            <div class="tip" aria-live="polite">Tokui + Zufallslisten</div>
+            <div class="tip" aria-live="polite">Sentei + Zufall</div>
           </div>
           <div class="inner">
             <ol id="kataList" class="list" aria-live="polite"></ol>
@@ -265,38 +265,26 @@ index_html = """<!doctype html>
       ]},
       { id:2, lines:[
         'vorwärts in Zk mit Soto-Uke/in Kb mit Yoko-Empi-Uchi/Tate-Uraken-Uchi/Gyaku-Zuki in Zk',
-        'rückwärts in Zk mit Uchi-Uke/Kizami-Mae-Geri/Kizami-Zuki/Gyaku-Zuki in Zk'
+        'rückwärts in Zk mit Uchi-Uke/Kizami-Mae-Geri/Kizami-Zuki/ Gyaku-Zuki in Zk'
       ]},
       { id:3, lines:[
-        'vorwärts in Kk mit Shuto-Uke/Kizami-Mae-Geri/Nukite in Zk, Wendung mit Gedan-Barai in Zk',
-        'aus Chudan-Kamae, vorwärts in Zk mit Mae-Geri/Kizami-Zuki/Gyaku-Zuki in Zk, Wendung mit Gedan-Barai in Zk'
+        'vorwärts in Kk mit Shuto-Uke/Kizami-Mae-Geri/ Nukite in Zk',
+        'aus Chudan-Kamae, vorwärts in Zk mit Mae-Geri/Kizami-Zuki/ Gyaku-Zuki in Zk, Wendung mit Gedan-Barai in Zk'
       ]},
       { id:4, lines:[
         'aus Chudan-Kamae, vorwärts in Zk mit Mawashi-Geri, Wendung mit Gedan-Barai in Zk',
-        'aus Chudan-Kamae, vorwärts in Zk mit Ren-Geri (Mawashi-Geri/mit gleichem Bein Yoko-Geri-Kekomi), Wendung mit Gedan-Barai in Zk'
-      ]},
-      { id:5, lines:[
-        'aus Chudan-Kamae, vorwärts in Zk mit Ushiro-Geri, Wendung mit Gedan-Barai in Kb',
-        'aus Chudan-Kamae, vorwärts in Kb mit Yoko-Geri-Keage/Drehung und mit hinterem Bein in Kb Yoko-Geri-Kekomi, mit gleichem Bein Yoko-Geri-Kekomi, Wendung mit Gedan-Barai in Zk'
+        'aus Chudan-Kamae, vorwärts in Zk mit Ren-Geri (Mawashi-Geri/ mit gleichem Bein Yoko-Geri-Kekomi), Wendung mit Gedan-Barai in Zk'
       ]},
       { id:6, lines:[
-        'Sonoba-Geri: (Standübung links und rechts) aus Zk und Chudan-Kamae: Mae-Geri nach vorne / mit gleichem Bein Yoko-Geri-Keage zur Seite / mit gleichem Bein Ushiro-Geri, nach hinten absetzen in Chudan-Kamae.'
+        'aus Chudan-Kamae, vorwärts in Zk mit Ushiro-Geri, Wendung mit Gedan-Barai in Kb',
+        'aus Chudan-Kamae, vorwärts in Kb mit Yoko-Geri-Keage/ Drehung und mit hinterem Bein in Kb Yoko-Geri-Kekomi'
       ]},
       { id:7, lines:[
-        'aus Chudan-Kamae links, im Stand Jodan-Kizami-Zuki/vorwärts in Zk mit Sanbon-Zuki (Jodan/Chudan/Chudan) aus Chudan-Kamae rückwärts in Zk mit Uchi-Uke/Mae-Geri/hinten absetzen mit Kizami-Zuki/Gyaku-Zuki.'
-      ]},
-      { id:8, lines:[
-        'aus Chudan-Kamae, einen Schritt zurück in Zk mit Age-Uke/vorwärts in Kb mit Mawashi-Geri/Tate-Uraken/vorwärts in Zk mit Oi-Zuki, Wendung mit Gedan-Barai in Zk',
-        'aus Chudan-Kamae, vorwärts in Zk mit Jodan-Oi-Zuki/Gyaku-Zuki/rückwärts in Kk mit Shuto-Uke/vorwärts in Zk mit Ushiro-Geri/Gyaku-Zuki, Wendung mit Gedan-Barai in Kb'
-      ]},
-      { id:9, lines:[
-        'aus Kb und Chudan-Kamae, vorwärts in Kb mit Yoko-Geri-Keage/Drehung und mit hinterem Bein Yoko-Geri-Kekomi in Kb',
-        'Sonoba-Geri: (Standübung links und rechts) aus Zk und Chudan-Kamae: Mae-Geri nach vorne, mit gleichem Bein Yoko-Geri-Keage zur Seite, mit gleichem Bein Ushiro-Geri nach hinten, mit gleichem Bein Mawashi-Geri nach vorne, nach hinten absetzen in Chudan-Kamae'
+        'Sonoba-Geri: (Standübung links und rechts) aus Zk und Chudan-Kamae:',
+        'Mae-Geri/Yoko-Geri-Keage/Ushiro-Geri'
       ]}
     ];
-    const KATA2 = ['Bassai-Dai','Kanku-Dai','Jion','Enpi','Hangetsu'];
-    const KATA3 = ['Heian Shodan','Heian Nidan','Heian Sandan','Heian Yondan','Heian Godan','Tekki Shodan','Tekki Nidan','Tekki Sandan'];
-    const KATA4 = ['Bassai Sho','Kanku Sho','Nijushiho','Jitte','Chinte','Meikyo','Gangaku','Sochin'];
+    const KATA1 = ['Heian Shodan','Heian Nidan','Heian Sandan','Heian Yondan','Heian Godan','Tekki Shodan'];
 
     // Helpers
     function shuffle(arr){ const a=arr.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]] } return a }
@@ -320,10 +308,8 @@ index_html = """<!doctype html>
     function renderKata(){
       const list = document.getElementById('kataList'); list.innerHTML='';
       const items = [
-        { num:1, text:'Tokui Kata' },
-        { num:2, text: pickOne(KATA2) },
-        { num:3, text: pickOne(KATA3) },
-        { num:4, text: pickOne(KATA4) },
+        { num:1, text:'Sentei-Kata' },
+        { num:2, text: pickOne(KATA1) }
       ];
       items.forEach(it=>{
         const li = document.createElement('li'); li.className='item';
