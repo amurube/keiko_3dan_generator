@@ -1,7 +1,7 @@
 {
   "name": "Keiko Generator",
   "short_name": "Keiko",
-  "description": "Zufällige Kihon-Kombinationen und Kata-Vorschläge – Für 3. Dan – DJKB (Stand: Juli 2013).",
+  "description": "Zufällige Kihon-Kombinationen und Kata-Vorschläge – Für 1. Dan – DJKB (Stand: Juli 2013).",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
